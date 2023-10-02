@@ -1,0 +1,28 @@
+* {
+    /*Resetar todas as configurações de navegadores ex. tirar bordas e margens*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  .bg-cor /*Alterar cor do Cabeçalho com a div bg-cor*/
+  {
+    color:white !important;
+    background-color: black !important;
+  }
+  
+  
+  .card-review {
+  float:right;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 2px 2px 2px 0;
+  }
+  .card{
+    border-radius: 2px;
+  }

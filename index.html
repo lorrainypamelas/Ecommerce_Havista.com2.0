@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Havista.com</title>
+    
+    
+</head>
+<body>
+  <!--Cabeçalho-->
+  <nav class="navbar navbar-dark bg-primary bg-cor">
+    <a class="navbar-brand">HAVISTA.COM</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      <button class="btn btn-outline-light  my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+  </nav>
+  <!--Card de busca-->
+  <section class="container row py-3 px-5"> 
+    <aside class="col-12 col-md-3  ">
+      <div class="card">
+        <ul class="list-group list-group-flush bg-cor">
+          <div class="card-header bg-cor">
+            Buscar
+          </div>
+          <li class="list-group-item"><a class="nav-link" href="#">Gênero</a><select class="form-control form-control-sm">
+            <option>Selecionar </option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Unissex</option>
+          </select></li>
+          <li class="list-group-item"><a class="nav-link" href="#">Categoria</a><select class="form-control form-control-sm">
+            <option>Selecionar </option>
+            <option>Promoção</option>
+            <option>Lançamentos</option>
+          </select></li>
+          <li class="list-group-item"><a class="nav-link" href="#">Preço</a><select class="form-control form-control-sm">
+            <option>Selecionar </option>
+            <option>Maior para menor</option>
+            <option>Menor para maior</option>
+          </select></li>
+        </ul><br>
+      </div><br>
+    </aside>
+    <!--Carrossel-->
+    <main class="col-12 col-md-9 ">
+      <div class="carrossel">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- SLIDE-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img\baner03.png" alt="Primeiro" width="100%" height="auto">
+            </div>
+            <div class="carousel-item">
+                <img src="img\baner02.png" alt="segundo" width="100%" height="auto">
+            </div>
+            <div class="carousel-item">
+                <img src="img\baner.png" alt="terceiro" width="100%" height="auto">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+          </div>
+            
+      </div>
+      <!--Linha para separar Carrossel dos cards -->
+      <hr  color="black">
+    </main>
+  </section>
+  
+  <!--Container de card de conteudos -->
+  <main>
+    <div class="card-review  p-2">
+      <div class="card-header bg-cor">
+        estaques
+      </div>
+      <div class="card" style="width: 10rem;">
+        <div class="card-body">
+          <h5 class="card-title">Pré Venda</h5>
+          <img class="card-img-top" src="img/angel.png" alt="Card image">
+          <p class="card-text">Angel De Thierry Mugler</p>
+          <a href="#" class="btn btn-dark bg-cor">Comprar</a>
+        </div>
+      </div>
+      <div class="card text-center" style="width: 10rem;">
+        <div class="card-body">
+          <h5 class="card-title">Pré Venda</h5>
+          <img class="card-img-top" src="img/pc.png" alt="Card image">
+          <p class="card-text">Phantom Eau De Toilette</p>
+          <a href="#" class="btn btn-dark bg-cor">Comprar</a>
+        </div>
+      </div>
+      <div class="card text-right" style="width: 10rem;">
+        <div class="card-body">
+          <h5 class="card-title">Pré Venda</h5>
+          <img class="card-img-top" src="img/ck.png" alt="Card image">
+          <p class="card-text">Carolina Herreira Good Girl</p>
+          <a href="#" class="btn btn-dark bg-cor">Comprar</a>
+        </div>
+      </div>
+      <div class="card text-right">
+        <div class="card" style="width: 10rem;">
+            <div class="card-body">
+              <h5 class="card-title">Mais Vendidos</h5>
+              <img class="card-img-top" src="img/twtver.png" alt="Card image">
+              <p class="card-text">Carolina Herrera 212</p>
+              <a href="#" class="btn btn-dark bg-cor">Comprar</a>
+            </div>
+          </div>
+          <div class="card text-center" style="width: 10rem;">
+            <div class="card-body">
+              <h5 class="card-title">Mais Vendidos</h5>
+              <img class="card-img-top" src="img/gucci.png" alt="Card image">
+              <p class="card-text">Gucci Première</p>
+              <a href="#" class="btn btn-dark bg-cor">Comprar</a>
+            </div>
+          </div>
+          
+          <div class="card text-right" style="width: 10rem;">
+            <div class="card-body">
+              <h5 class="card-title">Mais Vendidos</h5>
+              <img class="card-img-top" src="img/om.png" alt="Card image">
+              <p class="card-text">One million</p>
+              <a href="#" class="btn btn-dark bg-cor">Comprar</a>
+            </div>
+          </div>
+      </div>
+    </div> 
+    <section class="container">
+      <div class="container p-0 my-5 text-justify">
+        <div class="row">
+          <div class="col">
+              <div class="card" style="width:auto">
+                  <img class="card-img-top" src="img/ferrari.png" alt="Card image">
+                  <div class="card-body">
+                      <h5 class="card-title"><b>Ferrari Black</b></h5>
+                      <p class="card-text">O perfume Ferrari Red Eau de Toilette de Ferrari é um amadeirado refrescante que foi feito para homens apaixonados que têm rara personalidade e paixão pelo perigo<br><b>Valor: R$233,00</b></p>
+                      <div class="row">
+                          <div class="col-6">
+                              <p><b>Quant. </b></p>
+                          </div>
+                          <div class="col-6"><input class="form-control" type="number" id='morango' onclick="quanti1()"></div>
+                      </div>
+                   </div>
+               </div>
+          </div>
+          <div class="col">
+              <div class="card" style="width:auto">
+                <img class="card-img-top" src="img/chanel.png" alt="Card image">
+                  <div class="card-body">
+                      <h5 class="card-title"><b>Chanel de Bleu</b></h5>
+                      <p class="card-text">O Perfume Eau de Toilette, apresenta uma fragrância amadeirada aromática para o homem que desafia as convenções, e resiste a monotonia do dia a dia e encontra satisfação no inesperado.<br><b>Valor: R$863,00</b></p>
+                      <div class="row">
+                          <div class="col-6">
+                              <p><b>Quant. </b></p>
+                          </div>
+                          <div class="col-6"><input class="form-control" type="number" id='morango' onclick="quanti1()"></div>
+                      </div>
+                   </div>
+               </div>
+          </div>
+          <div class="col">
+              <div class="card" style="width:auto">
+                <img class="card-img-top" src="img/two.png" alt="Card image">
+                  <div class="card-body">
+                      <h5 class="card-title"><b>212 Vip black</b></h5>
+                      <p class="card-text">Sobre a fragrância Carolina Herrera lança 212 vip black, o novo Eau de Parfum verdadeiramente incrível, fresco e sexy. Notas 212 Vip Black é um perfume aromático fougére masculino.<br><b>Valor: R$569,00</b></p>
+                      <div class="row">
+                          <div class="col-6">
+                              <p><b>Quant. </b></p>
+                          </div>
+                          <div class="col-6"><input class="form-control" type="number" id='morango' onclick="quanti1()"></div>
+                      </div>
+                   </div>
+               </div>
+          </div>
+      </div><br>
+      <div class="row">
+        <div class="col">
+            <div class="card" style="width:auto">
+                <img class="card-img-top" src="img/twtver.png" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Carolina Herrera 212</b></h5>
+                    <p class="card-text">New York: A cidade da Sedução!
+                      A noite está só começando na cidade que nunca dorme...New York é a cidade mais sexy do mundo: com seu horizonte dramático, sua filosofia moderna, e suas noites mágicas.<br><b>Valor: R$396,00</b></p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><b>Quant. </b></p>
+                        </div>
+                        <div class="col-6"><input class="form-control" type="number" id='morango' onclick="quanti1()"></div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:auto">
+              <img class="card-img-top" src="img/chanelparis.png" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Chanel N°5 L'eau</b></h5>
+                    <p class="card-text">Vestido de vermelho, a cor favorita de Gabrielle Chanel, o Chanel N°5 Eau de Parfum Red Edition ($ 198 CAD por 100 ml)  mantém o perfume original. Eu tenho uma resenha deste lindo frasco, bem como do perfume em si,<br><b>Valor: R$499,00</b></p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><b>Quant. </b></p>
+                        </div>
+                        <div class="col-6"><input class="form-control" type="number" id='morango' onclick="quanti1()"></div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:auto">
+              <img class="card-img-top" src="img/ck2.png" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title"><b>CH Woman Eau de Toilette</b></h5>
+                    <p class="card-text">O perfume CH Carolina Herrera é um poder invisível, um toque final. Equilíbrio perfeito entre relaxamento e frescor, este perfume otimista traz uma elegância contemporânea à sua vida.<br><BR><b>Valor: R$719,00</b></p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><b>Quant. </b></p>
+                        </div>
+                        <div class="col-6"><input class="form-control" type="number" id='morango' onclick="quanti1()"></div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col">
+            <div class="card" style="width:auto">
+                <img class="card-img-top" src="img/twoamarelo.png" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title"><b>212 Vip Carolina Herrera</b></h5>
+                    <p class="card-text">212 VIP é uma fragrância divertida, festiva, uma mistura floral de estilo e atitude, que se desenvolveu em torno de três pilares.  <br></B><br><b>Valor: R$320,00</b></p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><b>Quant. </b></p>
+                        </div>
+                        <div class="col-6"><input class="form-control" type="number" id='morango' onclick="quanti1()"></div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:auto">
+              <img class="card-img-top" src="img/gucci.png" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Gucci Première</b></h5>
+                    <p class="card-text">Este Perfume é ideal para qualquer ocasião, seja uma festa, balada ou aquele encontro especial! é também uma ótima sugestão de presente. Seu aroma envolvente e apaixonante são sua marca registrada.<br><b>Valor: R$930,00</b></p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><b>Quant. </b></p>
+                        </div>
+                        <div class="col-6"><input class="form-control" type="number" id='morango' onclick="quanti1()"></div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:auto">
+              <img class="card-img-top" src="img/om.png" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title"><b>One million</b></h5>
+                    <p class="card-text">1 Million Parfum Eau De Parfum é um perfume masculino importado da marca Rabanne. Uma nova fragrância para compor o portfólio do best seller 1 Mllion.<BR><b>Valor: R$454,00</b></p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><b>Quant. </b></p>
+                        </div>
+                        <div class="col-6"><input class="form-control" type="number" id='morango' onclick="quanti1()"></div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+      </div><br>
+      <div class="newllester">
+        <div class="card ">
+            <div class="card-header bg-cor">
+                Newsletter
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <form>
+                    <div class="form-group">
+                        <label style="width:80%" for="exampleInputEmail1">Endereço de email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email"><br>
+                        <button type="submit" class="btn btn-dark bg-cor">Entrar</button>
+                      </div>
+                </form>
+              </blockquote>
+            </div>
+          </div>
+      </div>
+    </section> 
+ </main>
+  
+<!-- RODAPE -->
+<footer class="page-footer bg-cor ">
+  <div class="container">
+    <hr class="bg-cor" style="margin: 0 15%;">
+      <div class="row d-flex text-center justify-content-center  mb-md-0 mb-4 ">
+          <div class="col-md-8 col-12 mt-5">
+              <p style="line-height: 1.7rem; color: white;">Lorrainy Siqueira <br>Contato:
+                  (31)98591-7502<br>E-mail: lorrainypamela99@gmail.com</p>
+          </div>
+      </div>
+      <hr class="clearfix d-md-none bg-white " style="margin: 10% 15% 5%;">
+      <div class="row pb-3">
+      </div>
+     
+      <div class="footer-copyright text-center py-3" style="color: white;">© 2023 Copyright: Bootstrap<br>
+  </div>
+      
+  </div>
+</footer>
+    
+</body>
+</html>
